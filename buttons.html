@@ -1618,6 +1618,7 @@
 <div class="spinner-border text-primary" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
+<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
 
   <!--Footer-->
   <footer class="page-footer text-center font-small mt-4 wow fadeIn">
@@ -1694,6 +1695,11 @@
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
+  </script>
+  <script>
+    var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+   trigger: 'focus'
+   })
   </script>
 </body>
 
